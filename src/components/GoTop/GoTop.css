@@ -1,0 +1,47 @@
+.goTopHidden{
+    display: none;
+}
+.goTop{
+    display: block;
+}
+.goTop body,.showGoTop body{
+    background-color: #f2f2f3;
+}
+.goTop{
+    position: fixed;
+    background-color: black;
+    width:1%;
+    height: 1.5rem;
+    z-index: 10;
+    bottom:5%;
+    left: 90%;
+    padding: 1em 1.2em;
+    border:none;
+    border-radius: 60%;
+    box-shadow: 0 4px 10px 3px rgba(0,0,0,0.14);
+}
+.goTop,.showGoTop FontAwesomeIcon{
+    font-size: 1.5em;
+    font-weight: 500;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.goTop:hover{
+    background-color: #fff;
+    color: #121FCF;
+    transition:0.7s;
+}
+
+@media only screen and (max-width:500px){
+    .goTop{
+        left:75%;
+    }
+}
+@media (min-width:481px)and (max-width:676px){
+    .goTop{
+        left:85%;
+    }
+}

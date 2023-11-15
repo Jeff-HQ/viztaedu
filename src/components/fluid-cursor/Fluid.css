@@ -1,0 +1,20 @@
+
+.dotted-pattern {
+    display: flex;
+    border: 1px solid red;
+    flex-wrap: wrap;
+    gap: 5px; /* Adjust the gap between dots */
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #4fc3f7, #2196f3);
+    border-radius: 50%;
+    transition: background 0.5s ease;
+  }
+  
+  .dot.hovered {
+    background: radial-gradient(circle, #ff8a65, #ff5722);
+  }
+  

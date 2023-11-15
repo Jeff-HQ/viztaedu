@@ -1,0 +1,100 @@
+.Footer-div{
+    width:100%;
+    height: 100%;
+    background-color: #4d3967;
+    padding: 0 0.5rem;
+}
+.Footer-wrapper{
+    display: flex;
+    justify-content:flex-start;
+    padding: 1em;
+    flex-wrap: wrap;
+    text-align: left;
+    color: #b3b3b3;
+}
+
+.Footer-img img{
+   
+    width: 100px;
+    height: 100px;
+    
+}
+.location p:hover{
+   
+    color: white;
+    
+}
+
+.Footer-wrapper>div{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 1em;
+    padding: 0.5em;
+    flex-direction: column;
+    
+   
+}
+.socials ul{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.socials ul li{
+  
+    padding: 0.25rem 0.5rem;
+    margin: 0 0.25rem;
+}
+.socials ul li:hover{
+    background-color: white;
+    color: #010101;
+    padding-left: 0.25rem;
+}
+.copyright{
+    text-align: center;
+    color: #b3b3b3;
+    padding: 0.25rem 0;
+}
+.sc-flex ul{
+    background-color: none;
+    display: flex ;
+    flex-direction: column;
+}
+.sc-flex ul li:hover{
+    color: white;
+    background-color: #4d3967;
+    display: flex ;
+    flex-direction: column;
+    padding-left: 0.25rem;
+}
+@media only screen and (max-width:500px){
+   .Footer-div{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    
+   }
+    .Footer-wrapper>div{
+        width: 100%;
+        display: flex;
+        font-size: 1.25rem;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+    .sc-flex ul {
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+    .sc-flex ul li{
+        padding-left: 0;
+    }
+    .socials ul, .socials ul{
+    
+        padding-left: 0;
+    
+    }
+}

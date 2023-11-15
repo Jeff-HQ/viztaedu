@@ -1,0 +1,77 @@
+.Newsletter-wrapper{
+    background-image: url('/public/Images/dot-pattern.svg');
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+}
+.mail-input{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0.5rem auto;
+    margin: 3em 0;
+
+}
+.mail-input input{
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    padding: 0.2rem 0;
+     padding-top: 0;
+    border: 2px solid black;
+    width: 60%;
+    margin: 0;
+}
+.mail-input input::placeholder{
+    padding-left: 0.5rem;
+}
+.mail-input h1{
+    font-weight: 800;
+    font-size: 2rem;
+    background: #121FCF;
+background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.mail-input p{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.mail-input button{
+    width: 20%;
+    border: none;
+    padding: 1.25em 1em;
+    color: #FFF;
+    font-weight: 600;
+    background-color:#010101 ;
+}
+.mail-desc{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+@media only screen and (max-width:500px){
+    .Newsletter-div{
+        width:100%
+    }
+    
+    .mail-input{
+        width: 90%;
+       
+    }
+    .mail-input>button{
+        width: 30%;
+    }
+    .mail-input h1{
+        text-align: center;
+    }
+    
+}
