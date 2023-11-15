@@ -1,24 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Carousel.css';
 
 const Carousel = ({ imageUrls }) => {
-    const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-    const handleNextClick = () => {
-      setActiveIndex((prevIndex) => {
-        const newIndex = (prevIndex + 1) % imageUrls.length;
-        console.log('Next Click - New Index:', newIndex);
-        return newIndex;
-      });
-    };
-  
-    const handlePrevClick = () => {
-      setActiveIndex((prevIndex) => {
-        const newIndex = (prevIndex - 1 + imageUrls.length) % imageUrls.length;
-        console.log('Prev Click - New Index:', newIndex);
-        return newIndex;
-      });
-    };
+  const handleNextClick = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
+  };
+
+  const handlePrevClick = () => {
+    setActiveIndex((prevIndex) => (prevIndex - 1 + imageUrls.length) % imageUrls.length);
+  };
+
+  useEffect(() => {
+    // Set up an interval for automatic image changes
+    const intervalId = setInterval(() => {
+      handleNextClick();
+    }, 5000); // Change image every 5 seconds (adjust as needed)
+
+    // Clean up the interval on component unmount
+    return () => clearInterval(intervalId);
+  }, [activeIndex]); // Run the effect whenever activeIndex changes
 
   return (
     <div className='carousel-wrapper'>
