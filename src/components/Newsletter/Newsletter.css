@@ -38,6 +38,7 @@ background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
 .mail-input p{
     font-weight: 600;
     font-size: 1.5rem;
+    animation:showcontent 1s ease-in-out 1 forwards
 }
 .mail-input button{
     width: 20%;

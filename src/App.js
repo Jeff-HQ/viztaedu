@@ -11,15 +11,7 @@ import Events from './components/Events/Events';
 import GoTop from './components/GoTop/GoTop';
 
 function App() {
-  const imageUrls = [
-    './Images/7.jpg',
-    './Images/1.jpg',
-    './Images/2.jpg',
-    './Images/3.jpg',
-    './Images/4.jpg',
-    './Images/5.jpg',
-    './Images/6.jpg',
-  ];
+
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const [showGoTop, setshowGoTop] = useState('goTopHidden');
@@ -49,7 +41,7 @@ function App() {
     <div className='main-body_'>
       <Topbar />
       <Messagehead />
-      <Carousel imageUrls={imageUrls} />
+      <Carousel/>
       <GoTop showGoTop={showGoTop} scrollUp={handleScrollUp}/>
       <Blog />
       <Events />
